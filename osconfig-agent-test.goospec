@@ -1,0 +1,22 @@
+{
+  "name": "osconfig-agent-test",
+  "version": "0.5.2@1",
+  "arch": "x86_64",
+  "authors": "Google Inc.",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "description": "Google OSConfig agent test",
+  "files": {
+    "google_osconfig_agent.exe": "<ProgramFiles>/Google/OSConfig/osconfig_agent_test.exe"
+  },
+  "releaseNotes": [
+    "0.1.0 - Sample package",
+  ],
+  "sources": [{
+      "include": [
+        "osconfig_agent_test.exe",
+      ]
+  }],
+  "build": {
+    "linux": "./build.sh"
+  }
+}
