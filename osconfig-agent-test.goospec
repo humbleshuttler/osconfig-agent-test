@@ -9,13 +9,15 @@
     "google_osconfig_agent.exe": "<ProgramFiles>/Google/OSConfig/osconfig_agent_test.exe"
   },
   "releaseNotes": [
-    "0.1.0 - Sample package",
+    "0.1.0 - Sample package"
   ],
-  "sources": [{
+  "sources": [
+    {
       "include": [
-        "osconfig_agent_test.exe",
+        "osconfig_agent_test.exe"
       ]
-  }],
+    }
+  ],
   "build": {
     "linux": "./build.sh"
   }
