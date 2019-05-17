@@ -32,7 +32,7 @@ Contains the OSConfig agent test binary
 %autosetup
 
 %build
-GOPATH=%{_gopath} CGO_ENABLED=0 %{_go} build -ldflags="-s -w -X main.version=%{_version}" -mod=readonly -o osconfig_agent_test
+GOPATH=%{_gopath} CGO_ENABLED=0 %{_go} build -ldflags="-s -w -X main.version=%{_version}" -o osconfig_agent_test
 
 %install
 install -d %{buildroot}%{_bindir}
