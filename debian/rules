@@ -13,8 +13,8 @@ export GOCACHE := /tmp/.cache
 
 override_dh_auto_install:
 	# Binary-only package.
-	dh_auto_install -- --no-source
-	mv debian/osconfig-agent-test/usr/bin/osconfig debian/osconfig-agent-test/usr/bin/osconfig_agent_test
+	dh_auto_install
+	mv debian/osconfig-agent-test/usr/bin/osconfig-agent-test debian/osconfig-agent-test/usr/bin/osconfig_agent_test
 
 override_dh_golang:
 	# We don't use any packaged dependencies, so skip dh_golang step.
